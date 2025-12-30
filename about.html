@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tshewang Tashi $ungs services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!---bootstrap css--->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="about1.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+  <!--navbar code-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: aquamarine;" data-bs-theme="dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand">$ung</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active " href="about.html">About Me</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="skill.html">Skill</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects|works
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="action1.html">Action</a></li>
+              <li><a class="dropdown-item" href="action2.html">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="education.html">Education</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+
+        <!--search-->
+        <form class="d-flex" role="search" onsubmit="navbarSearch(event)">
+  <input 
+    class="form-control me-2" 
+    type="search" 
+    placeholder="Search" 
+    aria-label="Search"
+    id="navSearch"
+  />
+  <button 
+    class="btn btn-outline-success" 
+    type="submit"
+  >
+    Search
+  </button>
+</form>
+
+      
+    </div>
+  </div>
+  </nav>
+
+  <script>
+function navbarSearch(event) {
+  event.preventDefault(); // stops page reload
+
+  const query = document
+    .getElementById("navSearch")
+    .value
+    .toLowerCase()
+    .trim();
+
+  if (!query) {
+    alert("Please enter something to search");
+    return;
+  }
+
+  if (query.includes("skill")) {
+    location.href = "skill.html";
+  } 
+  else if (query.includes("project")) {
+    location.href = "projects.html";
+  } 
+  else if (query.includes("contact")) {
+    location.href = "contact.html";
+  } 
+  else if (query.includes("about")) {
+    location.href = "about.html";
+  } 
+  else if (query.includes("education")) {
+    location.href = "education.html";
+  } 
+  else if (query.includes("service")) {
+    location.href = "home.html#services";
+  } 
+  else {
+    alert("No matching section found");
+  }
+}
+</script>
+
+
+  <div class="wrapper">
+    <div class="testimonial">
+      <article>
+        <h1>About Me</h1>
+        <img src="ja.jpeg">
+        <br>
+
+        <blockquote>I’m a web designer and developer focused on creating clean, modern, and user-friendly websites. I
+          help individuals and small businesses build a strong online presence through thoughtful design and reliable
+          solutions.
+          I specialize in designing and developing responsive websites that are visually appealing and easy to navigate.
+          My approach combines clean design with practical functionality to deliver websites that work smoothly across
+          all devices.
+          I believe a good website should be simple, clear, and effective. By focusing on user experience and attention
+          to detail, I ensure every project meets both user needs and business goals.
+          If you’re looking for a professional and reliable web solution, feel free to get in touch.
+        </blockquote>
+        <h5>Why i do this</h5>
+        <p> I enjoy building the websites because it allows me to turn ideas into something meaningful and useful.
+          Creating clean layouts and imoroving users experience motivates me to keep learning and growing. I focus on
+          simplicity, clearity, and purpose in every project i work on.</p>
+      </article>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>

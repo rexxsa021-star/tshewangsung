@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tshewang Tashi $ungs services</title>
+    <!---bootstrap css--->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="action.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+    <!--navbar code-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: aquamarine;" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">$ung</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html">About Me</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill.html">Skill</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Projects|works
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="action1.html">Action</a></li>
+                            <li><a class="dropdown-item active" href="action2.html">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+
+
+                </ul>
+              <!--search-->
+        <form class="d-flex" role="search" onsubmit="navbarSearch(event)">
+  <input 
+    class="form-control me-2" 
+    type="search" 
+    placeholder="Search" 
+    aria-label="Search"
+    id="navSearch"
+  />
+  <button 
+    class="btn btn-outline-success" 
+    type="submit"
+  >
+    Search
+  </button>
+</form>
+
+      
+    </div>
+  </div>
+  </nav>
+
+  <script>
+function navbarSearch(event) {
+  event.preventDefault(); // stops page reload
+
+  const query = document
+    .getElementById("navSearch")
+    .value
+    .toLowerCase()
+    .trim();
+
+  if (!query) {
+    alert("Please enter something to search");
+    return;
+  }
+
+  if (query.includes("skill")) {
+    location.href = "skill.html";
+  } 
+  else if (query.includes("project")) {
+    location.href = "projects.html";
+  } 
+  else if (query.includes("contact")) {
+    location.href = "contact.html";
+  } 
+  else if (query.includes("about")) {
+    location.href = "about.html";
+  } 
+  else if (query.includes("education")) {
+    location.href = "education.html";
+  } 
+  else if (query.includes("service")) {
+    location.href = "home.html#services";
+  } 
+  else {
+    alert("No matching section found");
+  }
+}
+</script>
+
+<section class="projects-section">
+  <h1>Projects</h1>
+  <p class="intro">
+    I’m currently working on new projects and improving my skills.
+    This section will be updated soon with real-world and personal work.
+  </p>
+
+  <div class="projects-grid">
+
+    <div class="project-card coming-soon">
+      <h3>🚧 Project in Progress</h3>
+      <p>
+        Designing and developing clean, responsive websites with a focus on
+        user experience and performance.
+      </p>
+      <span class="badge">Coming Soon</span>
+    </div>
+
+    <div class="project-card">
+      <h3>🚀 Upcoming Projects</h3>
+      <ul>
+        <li>Personal portfolio improvements</li>
+        <li>Responsive landing pages</li>
+        <li>HTML, CSS & JavaScript practice projects</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>🛠 What I’m Currently Learning</h3>
+      <ul>
+        <li>Responsive layouts</li>
+        <li>Modern UI&UX design</li>
+        <li>Frontend fundamentals</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <p class="cta">
+    Have a project idea? <a href="contact.html">Let’s talk →</a>
+  </p>
+</section>
+
+</body>
+</html>
+</body>
+
+</html>

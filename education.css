@@ -1,0 +1,90 @@
+.education {
+  background: #0f0f0f;
+  color: #eaeaea;
+  padding: 80px 20px;
+  min-height: 100vh;
+}
+
+.education .container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.education h1 {
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 50px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #333;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-item .dot {
+  position: absolute;
+  left: -2px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: #6c63ff; /* accent color */
+  border-radius: 50%;
+}
+
+.timeline-item .content {
+  background: #1a1a1a;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.timeline-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.timeline-item span {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.timeline-item .year {
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.timeline-item p {
+  margin-top: 8px;
+  color: #ccc;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .hero-text{
+    text-align: center;
+  }
+ 
+  }
+.project-card{
+  margin-bottom: 20px;
+}
+html {
+  scroll-behavior: smooth;
+}

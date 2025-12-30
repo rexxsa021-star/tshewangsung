@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+/* BACKGROUND */
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('op.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+/* CONTENT CONTAINER */
+.testimonial {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HEADINGS */
+article h1 {
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fcba03;
+  text-align: center;
+}
+
+article h1::after {
+  height: 3px;
+  width: 200px;
+  background-color: #fcba03;
+  display: block;
+  margin: 12px auto;
+  content: "";
+}
+
+/* IMAGE */
+article img {
+  display: block;
+  margin: 30px auto;
+  height: 220px;
+  width: 220px;
+  max-width: 100%;
+  border-radius: 50%;
+  border: 5px solid #268af5;
+}
+
+/* TEXT */
+blockquote {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.7;
+  text-align: center;
+  margin-top: 20px;
+}
+
+article h5 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 30px;
+  color: #fcba03;
+  text-align: center;
+}
+
+article p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* 🔥 MOBILE FIXES */
+@media (max-width: 768px) {
+  article h1 {
+    font-size: 32px;
+  }
+
+  article img {
+    height: 170px;
+    width: 170px;
+  }
+
+  blockquote,
+  article p {
+    font-size: 15px;
+  }
+}
